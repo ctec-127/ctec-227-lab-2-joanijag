@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <?php 
 
-setcookie("username", 'BettyW', time() - 8600);
-setcookie("firstname", 'Betty', time() - 8600);
-setcookie("lastname", 'White', time() - 8600);
+setcookie("username", 'BettyW', time() - 86000);
+setcookie("firstname", 'Betty', time() - 86000);
+setcookie("lastname", 'White', time() - 86000);
 
-setcookie("cookie[institution]", "Clark", time() - 8600);
-setcookie("cookie[city]", "Vancouver", time() - 8600);
-setcookie("cookie[state]", "WA", time() - 8600);
+setcookie("cookie[institution]", "Clark", time() - 86000);
+setcookie("cookie[city]", "Vancouver", time() - 86000);
+setcookie("cookie[state]", "WA", time() - 86000);
 
 ?>
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,6 +18,7 @@ setcookie("cookie[state]", "WA", time() - 8600);
   <title>Document</title>
 </head>
 <body>
+
   <pre>
 		<?php print_r(headers_list());?>
 	</pre>

@@ -1,20 +1,4 @@
 <!DOCTYPE html>
-<?php 
-
-
-echo "<p>" . $_COOKIE['username']. "</p>";
-echo "<p>" . $_COOKIE['firstname']. "</p>";
-echo "<p>" . $_COOKIE['lastname']. "</p>";
-
- if (isset($_COOKIE["cookie"])){   
-   foreach ($_COOKIE["cookie"] as $key=>$val) {     
-    echo $key.' is '.$val."<br>\n";   
-  } // end foreach 
-} // end if  
-
-
-?>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -23,8 +7,27 @@ echo "<p>" . $_COOKIE['lastname']. "</p>";
   <title>Document</title>
 </head>
 <body>
-  <pre>
-		
-	</pre>
+<?php 
+
+echo "<p>" . $_COOKIE['username']. "</p>";
+echo "<p>" . $_COOKIE['firstname']. "</p>";
+echo "<p>" . $_COOKIE['lastname']. "</p>";
+
+ if (isset($_COOKIE["cookie"])){   
+   foreach ($_COOKIE["cookie"] as $key=>$val) {     
+    echo $key . ' is '. $val . "<br>\n";   
+  } // end foreach 
+} // end if  
+
+?>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
